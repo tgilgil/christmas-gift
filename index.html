@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <title>Pour Noël</title>
+        <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">        
+    </head>
+    <body>
+        <div id="overlay" class="inactive">
+            <div id="excuses">
+                <p>Le père noël est en retard cette année, et son cadeau tarde à arriver vers la poste... Veux-tu tout de même voir ton cadeau?</p>
+
+                <button onclick="showGift();">Je veux voir mon cadeau</button>
+                <button onclick="noWayJose();">Je préfère patienter</button>
+                <img id="owl" src="owl.jpg" class="inactive" />
+            </div>
+        </div>
+
+        <div id="overlay-2" class="inactive">
+        </div>
+
+        <div class="container">
+            <h1 class="neon-blue flicker">C'est noël</h1>
+            <h1 class="neon-red">Ouvre ton cadeau Catherine</h1>
+            <img id="box" src="box.png" onclick="attemptToOpenGift();" />
+        </div>
+        <script>
+            var attempts = 0;
+
+            function attemptToOpenGift() {
+                attempts++;
+
+                if (attempts > 3) {
+                    document.querySelector('#overlay').className = "active";
+                }
+            };
+
+            function showGift() {
+                window.location = 'https://images-na.ssl-images-amazon.com/images/I/61IqHU5wCfL._UL1500_.jpg';
+            }
+
+            function noWayJose() {
+                document.querySelector('#overlay-2').className = "active";
+            }
+        </script>
+    </body>
+</html>

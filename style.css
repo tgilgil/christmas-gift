@@ -1,0 +1,152 @@
+:root {
+  font-size: calc(1vw + 1vh + 1.5vmin);
+}
+
+#overlay {
+    z-index: 99999;
+    width: 50%;
+    height: 50%;
+    background-color: black;
+    position: absolute;
+    margin: auto auto;
+    opacity: 0.75;
+}
+
+p {
+    color:white;
+}
+
+#overlay-2 {
+    z-index: 999999;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    margin: auto auto;
+    background-image: url('https://media1.tenor.com/images/966447a0243e0f9d0594074375e798e0/tenor.gif');
+    background-size: cover;
+}
+
+#excuses {
+    padding: 0.25rem;
+}
+
+.inactive {
+    display: none;
+} 
+
+body {
+  background-color: black;
+  background-image: url("https://i.pinimg.com/originals/6d/78/71/6d78711d7c8438405ee8a5a50114f9ac.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 1rem;
+  display:flex;justify-content:center;align-items:center;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Bungee';
+}
+
+#box {
+    margin: 0 auto;
+    display: block;
+}
+
+#box:hover {
+    animation: shake 1s cubic-bezier(.36,.07,.19,.97) both infinite;
+    transform: translate3d(0, 0, 0);
+}
+
+.flicker {
+    animation: text-flicker 3s linear infinite;    
+}
+
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
+.neon-blue {
+  color: #fff;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #0ff,
+    0 0 80px #0ff,
+    0 0 90px #0ff,
+    0 0 100px #0ff,
+    0 0 150px #0ff;
+}
+
+.neon-red {
+    color: #fff;
+    text-shadow:
+      0 0 5px #fff,
+      0 0 10px #fff,
+      0 0 20px #fff,
+      0 0 40px rgb(75, 9, 9),
+      0 0 80px rgb(75, 9, 9),
+      0 0 90px rgb(75, 9, 9),
+      0 0 100px rgb(75, 9, 9),
+      0 0 150px rgb(75, 9, 9);
+  }
+
+@keyframes text-flicker {
+    0% {
+      opacity:0.1;
+    }
+    
+    2% {
+      opacity:1;
+    }
+    8% {
+      opacity:0.1;
+    }
+    9% {
+      opacity:1;
+    }
+    12% {
+      opacity:0.1;
+    }
+    20% {
+      opacity:1;
+    }
+    25% {
+      opacity:0.3;
+    }
+    30% {
+      opacity:1;
+    }
+    
+    70% {
+      opacity:0.7;
+    }
+    
+    72% {
+      opacity:0.2;
+    }
+    
+    77% {
+      opacity:.9;
+    }
+    100% {
+      opacity:.9;
+    }
+  }
