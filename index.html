@@ -37,6 +37,12 @@
                 if (attempts > 2) {
                     document.querySelector('#overlay').className = "active";
                 }
+
+                document.getElementById('box').style.animation = 'shake 0.75s cubic-bezier(.36,.07,.19,.97) both';
+
+                setInterval(() => {
+                    document.getElementById('box').style.animation = '';
+                }, 500);
             };
 
             function showGift() {

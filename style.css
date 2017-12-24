@@ -65,13 +65,12 @@ p {
 }
 
 #box:hover {
-    animation: shake 1s cubic-bezier(.36,.07,.19,.97) both; 
+    /* animation: shake 1s cubic-bezier(.36,.07,.19,.97) both;  */
     transform: translate3d(0, 0, 0); 
     cursor: pointer;
 }
 
 #box:active {
-  animation: shake 1s cubic-bezier(.36,.07,.19,.97) both;
   transform: translate3d(0, 0, 0);
 }
 
