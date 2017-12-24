@@ -2,6 +2,11 @@
   font-size: calc(1vw + 1vh + 1.5vmin);
 }
 
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
 #overlay {
     z-index: 99999;
     width: 50%;
@@ -50,15 +55,26 @@ h1 {
   font-family: 'Bungee';
 }
 
+p {
+  font-family: Helvetica, sans-serif;
+}
+
 #box {
     margin: 0 auto;
     display: block;
 }
 
 #box:hover {
-    animation: shake 1s cubic-bezier(.36,.07,.19,.97) both infinite;
-    transform: translate3d(0, 0, 0);
+    animation: shake 1s cubic-bezier(.36,.07,.19,.97) both; 
+    transform: translate3d(0, 0, 0); 
+    cursor: pointer;
 }
+
+#box:active {
+  animation: shake 1s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+}
+
 
 .flicker {
     animation: text-flicker 3s linear infinite;    
