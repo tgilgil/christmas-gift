@@ -1,0 +1,104 @@
+<html lang="en">
+<head>
+    <!--
+
+        CODE TOP SECRET APPARTENANT À LA GRC.
+
+        INTERDICTION DE PHOTOCOPIER CE CONTENU.
+
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="TGVzIHByZW1p6HJlcyBsZXR0cmVzIHNvbnQgaW1wb3J0YW50ZXMu">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Joyeux Noël Catherine! - Édition 2019</title>
+    <style>
+        body {
+            margin: 150px;
+            background-color: black;
+            color: green;
+            font-family: Consolas, sans-serif;
+        }
+
+        #screen {
+            border: 1px solid green;
+            padding: 50px;
+        }
+
+        #screen > pre {
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        #trailing-marker {
+            animation: blink 1s linear infinite;
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+
+        button { 
+            text-align:center;
+            background-color: black;
+            color: green;
+            border: 1px solid green;
+            font-size: 14px;
+            padding: 15px
+        }
+
+        button:hover {
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="screen">
+    <pre id="warning-to-hackers">
+  _____ ___  ____    ____  _____ ____ ____  _____ _____ 
+  |_   _/ _ \|  _ \  / ___|| ____/ ___|  _ \| ____|_   _|
+    | || | | | |_) | \___ \|  _|| |   | |_) |  _|   | |  
+    | || |_| |  __/   ___) | |__| |___|  _ <| |___  | |  
+    |_| \___/|_|     |____/|_____\____|_| \_\_____| |_|  
+    </pre>
+    <button id="connexion" onclick="window.type(cues)">$ connexion</button>
+    <p id="cue"></p>
+    <p id="trailing-marker">> </p>
+    </div>
+    <script>
+        var speed = 85;
+        var cues = "$ Tentative d'accès au terminal de la Gendarmerie royale du Canada...|$ Identité confirmé. |$ La réponse est dans la page, mais n'est visible qu'aux employés de la GRC ou aux meilleurs pirates informatique.";
+
+        var dom = document.getElementById('cue');
+        var i = 0;
+
+        /**
+            Identifiants nécessaire pour dévoiler le secret. Ce système à été créé par le
+            laboratoire Montréalais de la GRC en partenariat avec les services secret de
+            Lyon. Grâve à cette collaboration internationale, cet
+            ultime système servira à protéger le Canada des attaques informatique
+            malicieuse. Toutefois, le système comporte quelques failles.
+            Idéalement, personne ne pensera débogguer la variable GRC_KEY_DO_NOT_DEBUG...
+        */
+
+        function type(cue) {
+            document.getElementById('connexion').hidden = true;
+            if (i < cue.length) {
+                var letter = cue.charAt(i);
+                if (letter === '|') dom.innerHTML += '<br />';
+                else dom.innerHTML = dom.innerHTML + cue.charAt(i);
+                i++;
+                setTimeout(() => type(cue), speed);
+            }
+        }
+
+        // Note pour Maurice... n'oublie pas de lire la documentation https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval
+        var GRC_KEY_DO_NOT_DEBUG = "([]+[]+[][[]])[(+[+!+[]+[+[]]])/((+!+[])+(+!+[]))]+([]+[]+[][[]])[(+!+[])]+(!![]+[])[(+[])]+(!![]+[])[(+!+[])]+(!![]+[])[((+!+[])+(+!+[]))]+(![]+[])[(+!+[]+((+!+[])+(+!+[])))]+([]+[]+[][[]])[(+[+!+[]+[+[]]])/((+!+[])+(+!+[]))]+(typeof ![])[(+!+[])]+([]+[]+[][[]])[(+!+[])]+` `+([]+[]+[][[]])[((+!+[])+(+!+[]))]+`é`+(!![]+[])[(+[])]+([]+[]+[][[]])[(+!+[]+((+!+[])+(+!+[])))]+(typeof [])[((+!+[])+(+!+[]))*((+!+[])+(+!+[]))]+(!![]+[])[(+[])]+`é`+([]+[]+[][[]])[(+!+[]+((+!+[])+(+!+[])))]+`.`+` `+(![]+[])[((+!+[])+(+!+[]))]+(![]+[])[(+!+[])]+` `+(typeof [])[((+!+[])+(+!+[]))*((+!+[])+(+!+[]))]+(![]+[])[((+!+[])+(+!+[]))]+`é`+` `+(typeof [])[((+!+[])+(+!+[]))*((+!+[])+(+!+[]))]+(typeof ![])[(+!+[])]+([]+[]+[][[]])[(+!+[])]+(!![]+[])[(+[])]+([]+[]+[][[]])[(+!+[]+((+!+[])+(+!+[])))]+([]+[]+[][[]])[(+!+[])]+(!![]+[])[((+!+[])+(+!+[]))]+` `+([]+[]+[][[]])[((+!+[])+(+!+[]))]+(![]+[])[(+!+[])]+([]+[]+[][[]])[(+!+[])]+(![]+[])[(+!+[]+((+!+[])+(+!+[])))]+` `+(![]+[])[((+!+[])+(+!+[]))]+(![]+[])[(+!+[])]+` `+(!![]+[])[(+[])]+(!![]+[])[(+!+[])]+(typeof ![])[(+!+[])]+([]+[]+[][[]])[(+[+!+[]+[+[]]])/((+!+[])+(+!+[]))]+(![]+[])[(+!+[]+((+!+[])+(+!+[])))]+([]+[]+[][[]])[(+[+!+[]+[+[]]])/((+!+[])+(+!+[]))]+`è`+(typeof +[])[((+!+[])+(+!+[]))]+([]+[]+[][[]])[(+!+[]+((+!+[])+(+!+[])))]+` `+(typeof [])[(+!+[])]+(![]+[])[(+!+[])]+(![]+[])[((+!+[])+(+!+[]))]+([]+[]+[][[]])[(+[+!+[]+[+[]]])/((+!+[])+(+!+[]))]+(![]+[])[(+!+[]+((+!+[])+(+!+[])))]+([]+[]+[][[]])[(+!+[]+((+!+[])+(+!+[])))]+` `+(typeof +[])[((+!+[])+(+!+[]))]+([]+[]+[][[]])[(+!+[]+((+!+[])+(+!+[])))]+(!![]+[])[(+[])]+(![]+[])[(+!+[])]+` `+([]+[]+[][[]])[(+!+[]+((+!+[])+(+!+[])))]+(![]+[])[(+!+[]+((+!+[])+(+!+[])))]+(!![]+[])[(+[])]+` `+(typeof +[])[((+!+[])+(+!+[]))]+(![]+[])[(+!+[])]+([]+[]+[][[]])[(+[+!+[]+[+[]]])/((+!+[])+(+!+[]))]+([]+[]+[][[]])[(+!+[])]+(!![]+[])[(+[])]+([]+[]+[][[]])[(+!+[]+((+!+[])+(+!+[])))]+([]+[]+[][[]])[(+!+[])]+(![]+[])[(+!+[])]+([]+[]+[][[]])[(+!+[])]+(!![]+[])[(+[])]+` `+([]+[]+[][[]])[(+!+[]+((+!+[])+(+!+[])))]+([]+[]+[][[]])[(+!+[])]+(typeof [])[((+!+[])+(+!+[]))*((+!+[])+(+!+[]))]+(typeof ![])[(+!+[])]+([]+[]+[][[]])[((+!+[])+(+!+[]))]+`é`+` `+` `+(RegExp().constructor.name)[((+!+[])+(+!+[]))+(+!+[]+((+!+[])+(+!+[])))]+(![]+[])[(+!+[])]+(!![]+[])[(+!+[])]+` `+(![]+[])[((+!+[])+(+!+[]))]+(![]+[])[(+!+[])]+` `+(typeof +[])[((+!+[])+(+!+[]))]+`é`+(!![]+[])[(+[])]+'h'+(typeof ![])[(+!+[])]+([]+[]+[][[]])[((+!+[])+(+!+[]))]+([]+[]+[][[]])[(+!+[]+((+!+[])+(+!+[])))]+` `+(typeof [])[(+!+[])]+(!![]+[])[(+[])]+(typeof ![])[(+!+[])]+(![]+[])[(+!+[])]+`(`+`)`+` `+(RegExp().constructor.name)[((+!+[])+(+!+[]))+(+!+[]+((+!+[])+(+!+[])))]+(typeof ![])[(+!+[])]+(!![]+[])[((+!+[])+(+!+[]))]+(!![]+[])[(+!+[])]+` `+([]+[]+[][[]])[((+!+[])+(+!+[]))]+([]+[]+[][[]])[(+!+[]+((+!+[])+(+!+[])))]+` `+(![]+[])[((+!+[])+(+!+[]))]+(![]+[])[(+!+[])]+` `+(![]+[])[(+!+[]+((+!+[])+(+!+[])))]+`é`+(typeof [])[((+!+[])+(+!+[]))*((+!+[])+(+!+[]))]+(!![]+[])[((+!+[])+(+!+[]))]+(!![]+[])[(+!+[])]+([]+[]+[][[]])[(+[+!+[]+[+[]]])/((+!+[])+(+!+[]))]+(!![]+[])[(+[])]+`é`+` `+(![]+[])[(+!+[])]+([]+[]+[][[]])[((+!+[])+(+!+[]))]+([]+[]+[][[]])[((+!+[])+(+!+[]))]+([]+[]+[][[]])[(+[+!+[]+[+[]]])/((+!+[])+(+!+[]))]+(!![]+[])[(+[])]+([]+[]+[][[]])[(+[+!+[]+[+[]]])/((+!+[])+(+!+[]))]+(typeof ![])[(+!+[])]+([]+[]+[][[]])[(+!+[])]+([]+[]+[][[]])[(+!+[])]+([]+[]+[][[]])[(+!+[]+((+!+[])+(+!+[])))]+(![]+[])[((+!+[])+(+!+[]))]+(![]+[])[((+!+[])+(+!+[]))]+([]+[]+[][[]])[(+!+[]+((+!+[])+(+!+[])))]";
+    
+        window.type = type;
+    </script>
+</body>
+</html>
